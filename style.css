@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --background-color: #247ba0;
+  --primary-color: #fffcff;
+  --dark-color: black;
+}
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.container {
+  width: 35%;
+}
+.startImage {
+  width: 100%;
+}
+.title {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 22px;
+}
+.cardView {
+  margin-top: 20vh;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.btns {
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+  padding: 8px 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: none;
+}
+.btns:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#start {
+  display: flex;
+}
+#gameArea,
+#diffcultySelect {
+  display: none;
+}
+.selectTitle {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin: 10px;
+  border-bottom: 2px solid var(--dark-color);
+}
+.levels {
+  margin: 10px;
+}
+span {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+  padding: 2px;
+}
+.level {
+  padding: 5px;
+  text-align: center;
+}
+label {
+  margin: 0px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.selectArea {
+  margin: 10px 0px 20px 0px;
+}
+#levelSelect {
+  padding: 2px;
+  text-transform: uppercase;
+}
+#gameArea {
+  text-align: center;
+  text-transform: uppercase;
+}
+.gameTitle {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+.highLow {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 10px 0px 8px 0px;
+}
+#dif {
+  font-size: 14px;
+  color: black;
+  background-color: var(--primary-color);
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+  border-bottom: 1.5px solid black;
+}
+.context {
+  margin: 14px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#guessNumber {
+  margin: 10px;
+  padding: 10px;
+  height: 10vh;
+  text-align: center;
+  font-size: 18px;
+  width: 40%;
+}
+#submitAns {
+  margin-top: 22px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 14px;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.829);
+}
+#resetGame {
+  font-size: 13px;
+  border-radius: 2px;
+  margin-top: 10px;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 85%;
+  }
+  .selectTitle {
+    font-size: 14px;
+    border-bottom: 1.5px solid black;
+  }
+  label {
+    font-size: 13px;
+  }
+}

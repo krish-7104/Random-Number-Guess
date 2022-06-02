@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Number | Krish Jotaniya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="cardView animate__animated animate__slideInDown" id="start">
+        <p class="title">Guess The Number</p>
+        <img src="quiz_start.png" alt="" class="startImage" />
+        <button id="startBtn" class="btns">Lets Start</button>
+      </div>
+      <div
+        class="cardView animate__animated animate__fadeIn"
+        id="diffcultySelect"
+      >
+        <p class="selectTitle">Select The Difficult Level</p>
+        <div class="levels">
+          <span>Easy Level</span>
+          <p class="level">Guess No. Between 1- 10</p>
+          <span>Medium Level</span>
+          <p class="level">Guess No. Between 1- 100</p>
+          <span>Hard Level</span>
+          <p class="level">Guess No. Between 1- 1000</p>
+        </div>
+        <div class="selectArea">
+          <label for="levelSelect">SELECT LEVEL: </label>
+          <select
+            name="levelSelect"
+            id="levelSelect"
+            title="Select Difficult Level"
+          >
+            <option value="Easy" id="easy">Easy</option>
+            <option value="Medium" id="medium">Medium</option>
+            <option value="Hard" id="hard">Hard</option>
+          </select>
+        </div>
+        <button id="selectLevel" class="btns" title="Game Start">
+          Start Game
+        </button>
+      </div>
+      <div class="cardView animate__animated animate__fadeIn" id="gameArea">
+        <p class="gameTitle">Guess A Random Number 🤔<span id="dif"></span></p>
+        <p class="highLow animate__animated animate__fadeIn" id="highLow">
+          Enter A Guess Number Below
+        </p>
+        <div class="context">
+          <input type="number" id="guessNumber" />
+          <button class="btns" id="submitAns" title="Check Guess">
+            Check Quess
+          </button>
+          <a href="index.html" id="resetGame" title="Play Again"
+            >Want To Play Again?</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>
+        Developed With ❤️ By
+        <a href="https://linktr.ee/krish7104">Krish Jotaniya</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

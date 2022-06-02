@@ -1,5 +1,6 @@
 "use strict";
-let startBtn = document.getElementById("start");
+let startBtn = document.getElementById("startBtn");
+let startArea = document.getElementById("start");
 let selectDiffBtn = document.getElementById("selectLevel");
 let selectDifficultyArea = document.getElementById("diffcultySelect");
 let gameArea = document.getElementById("gameArea");
@@ -14,11 +15,11 @@ let gameStatus = false;
 let count = 0;
 startBtn.addEventListener("click", () => {
   selectDifficultyArea.style.display = "flex";
-  startBtn.style.display = "none";
+  startArea.style.display = "none";
 });
 selectDiffBtn.addEventListener("click", () => {
   selectDifficultyArea.style.display = "none";
-  startBtn.style.display = "none";
+  startArea.style.display = "none";
   gameArea.style.display = "flex";
   difficulty = document.getElementById("levelSelect").value;
   if (difficulty == "Easy") diffShow.innerText = `Between 1 - 10`;
